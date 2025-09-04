@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvimento de Sistema com IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Cabeçalho com navegação entre os 3 temas -->
     <header>
-        <h1>Desenvolvimento de Sistema com Inteligência Artificial</h1>
-        <nav>
-            <ul>
-                <li><a href="#tema1">Sistemas de Recomendação</a></li>
-                <li><a href="#tema2">Automação de Processos</a></li>
-                <li><a href="#tema3">Segurança com IA</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Inteligência Artificial no Desenvolvimento de Sistemas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tema1">Recomendação de Filmes</a></li>
+                    <li><a href="#tema2">Automação de Processos</a></li>
+                    <li><a href="#tema3">Reconhecimento Facial</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Seção para Sistema de Recomendação -->
-    <section id="tema1">
-        <div class="content">
+    <section id="tema1" class="section-theme">
+        <div class="container">
             <h2>Escolha seu gênero favorito:</h2>
-            <form id="genre-form">
+            <form id="genre-form" class="form">
                 <label for="genre">Gênero:</label>
                 <select id="genre" name="genre">
                     <option value="action">Ação</option>
@@ -35,47 +38,48 @@
             </form>
 
             <div id="recommendations" class="recommendations">
-                <!-- As recomendações de filmes serão exibidas aqui -->
+                <!-- Recomendações de filmes -->
             </div>
         </div>
     </section>
 
     <!-- Seção para Automação de Processos -->
-    <section id="tema2">
-        <div class="content">
+    <section id="tema2" class="section-theme">
+        <div class="container">
             <h2>Carregue um documento para classificação:</h2>
-            <form id="document-form">
+            <form id="document-form" class="form">
                 <input type="file" id="document" name="document" accept=".txt, .pdf">
                 <button type="submit">Classificar Documento</button>
             </form>
 
             <div id="result" class="result">
-                <!-- O resultado da classificação será exibido aqui -->
+                <!-- Resultado da classificação -->
             </div>
         </div>
     </section>
 
-    <!-- Seção para Reconhecimento Facial com IA -->
-    <section id="tema3">
-        <div class="content">
+    <!-- Seção para Reconhecimento Facial -->
+    <section id="tema3" class="section-theme">
+        <div class="container">
             <h2>Envie uma imagem para reconhecimento:</h2>
-            <form id="image-form">
+            <form id="image-form" class="form">
                 <input type="file" id="image-upload" name="image" accept="image/*">
                 <button type="submit">Verificar Face</button>
             </form>
 
             <div id="face-result" class="face-result">
-                <!-- O resultado será exibido aqui -->
+                <!-- Resultado do reconhecimento -->
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Desenvolvido por ChatGPT - 2025</p>
+        <div class="container">
+            <p>Desenvolvido por ChatGPT - 2025</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
->
-</html> <!-- Fim do documento HTML -->
+
