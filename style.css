@@ -1,160 +1,80 @@
-/* Resetando estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de Sistema com IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com navegação entre os 3 temas -->
+    <header>
+        <div class="container">
+            <h1>IA no Desenvolvimento de Sistemas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tema1">Recomendação de Filmes</a></li>
+                    <li><a href="#tema2">Automação de Processos</a></li>
+                    <li><a href="#tema3">Reconhecimento Facial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
+    <!-- Seção para Sistema de Recomendação -->
+    <section id="tema1" class="section-theme">
+        <div class="container">
+            <h2>Recomendações de Filmes</h2>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/200x300?text=Filme+1" alt="Filme 1">
+                    <p>Filme 1</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/200x300?text=Filme+2" alt="Filme 2">
+                    <p>Filme 2</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/200x300?text=Filme+3" alt="Filme 3">
+                    <p>Filme 3</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/200x300?text=Filme+4" alt="Filme 4">
+                    <p>Filme 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* Cabeçalho e Navegação */
-header {
-    background-color: #3b5998;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    <!-- Seção para Automação de Processos -->
+    <section id="tema2" class="section-theme">
+        <div class="container">
+            <h2>Automação de Processos</h2>
+            <form id="document-form" class="form">
+                <input type="file" id="document" name="document" accept=".txt, .pdf">
+                <button type="submit">Classificar Documento</button>
+            </form>
+        </div>
+    </section>
 
-header .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+    <!-- Seção para Reconhecimento Facial -->
+    <section id="tema3" class="section-theme">
+        <div class="container">
+            <h2>Reconhecimento Facial</h2>
+            <form id="image-form" class="form">
+                <input type="file" id="image-upload" name="image" accept="image/*">
+                <button type="submit">Verificar Face</button>
+            </form>
+        </div>
+    </section>
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por ChatGPT - 2025</p>
+        </div>
+    </footer>
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 10px;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffcb05;
-}
-
-/* Seções de conteúdo */
-.section-theme {
-    background-color: white;
-    padding: 40px 20px;
-    margin-top: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.section-theme .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-h2 {
-    font-size: 2em;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-/* Estilo de formulários e botões */
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.form label {
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-input[type="file"],
-select,
-button {
-    padding: 12px;
-    font-size: 1em;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    outline: none;
-}
-
-input[type="file"],
-select {
-    background-color: #f9f9f9;
-}
-
-button {
-    background-color: #3b5998;
-    color: white;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #2e4376;
-}
-
-/* Resultados e Recomendações */
-.recommendations, .result, .face-result {
-    margin-top: 30px;
-    font-size: 1.2em;
-    font-weight: 500;
-    color: #333;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1em;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .form {
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
