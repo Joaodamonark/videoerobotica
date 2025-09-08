@@ -70,14 +70,4 @@ nav a {
     font-weight: bold; /* Texto em negrito */
 }
 
-/* Estilo para o rodapé */
-/* Rodapé estilizado como cabeçalho */
-.bottom-header {
-    background-color: #007bff; /* mesma cor do header */
-    color: white;              /* texto branco */
-    text-align: center;        /* centraliza o texto */
-    padding: 20px 0;           /* espaçamento interno */
-    font-size: 18px;           /* tamanho da fonte */
-    font-weight: bold;         /* negrito */
-}
 
