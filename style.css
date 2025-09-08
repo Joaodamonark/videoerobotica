@@ -71,13 +71,13 @@ nav a {
 }
 
 /* Estilo para o rodapé */
-footer {
-    background-color: #007bff; /* Cor azul (padrão Bootstrap) */
-    text-align: center; /* Centraliza o texto */
-    margin-top: 50px; /* Espaço acima do rodapé */
-    padding: 20px 0; /* Espaçamento interno */
-    font-weight: bold; /* Negrito */
-    color: #333; /* Cor do texto */
-    border-top: 1px solid #ccc; /* Linha separadora no topo */
+/* Rodapé estilizado como cabeçalho */
+.bottom-header {
+    background-color: #007bff; /* mesma cor do header */
+    color: white;              /* texto branco */
+    text-align: center;        /* centraliza o texto */
+    padding: 20px 0;           /* espaçamento interno */
+    font-size: 18px;           /* tamanho da fonte */
+    font-weight: bold;         /* negrito */
 }
 
