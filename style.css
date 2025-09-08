@@ -1,69 +1,83 @@
+/* Estilo geral do corpo da página */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif; /* Define a fonte principal */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimento interno */
+    background-color: #f5f5f5; /* Cor de fundo suave (cinza claro) */
 }
 
+/* Limita o conteúdo ao centro com largura máxima */
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
+    max-width: 900px; /* Largura máxima do conteúdo */
+    margin: auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
 }
 
+/* Estiliza o cabeçalho da página */
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
+    background-color: #007bff; /* Cor azul (padrão Bootstrap) */
+    color: white; /* Texto branco */
+    padding: 30px 0; /* Espaço acima e abaixo */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Espaçamento padrão para títulos */
 h1, h2, h3, h4 {
-    margin: 0 0 15px;
+    margin: 0 0 15px; /* Espaço abaixo dos títulos */
 }
 
+/* Estilo para parágrafos */
 p {
-    line-height: 1.6;
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
 }
 
+/* Layout em grade para os vídeos */
 .video-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: grid; /* Usa grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo: mínimo de 250px por coluna */
+    gap: 20px; /* Espaçamento entre vídeos */
 }
 
+/* Estilo individual de cada vídeo */
 .video-item {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
+    background: white; /* Fundo branco */
+    padding: 10px; /* Espaço interno */
+    border-radius: 8px; /* Cantos arredondados */
 }
 
+/* Estilo para o player de vídeo */
 iframe {
-    width: 100%;
-    height: 200px;
-    border: none;
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: 200px; /* Altura fixa */
+    border: none; /* Sem borda */
 }
 
+/* Estilo da lista de navegação */
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove padding padrão */
 }
 
+/* Espaçamento entre os itens da lista de navegação */
 nav li {
     margin-bottom: 10px;
 }
 
+/* Estilo dos links de navegação */
 nav a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
+    text-decoration: none; /* Remove sublinhado */
+    color: #007bff; /* Cor azul */
+    font-weight: bold; /* Texto em negrito */
 }
+
+/* Estilo para o rodapé */
 footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px 0;
-    font-weight: bold;
-    color: #333;
-    border-top: 1px solid #ccc;
+    background-color: #007bff; /* Cor azul (padrão Bootstrap) */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px; /* Espaço acima do rodapé */
+    padding: 20px 0; /* Espaçamento interno */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do texto */
+    border-top: 1px solid #ccc; /* Linha separadora no topo */
 }
 
